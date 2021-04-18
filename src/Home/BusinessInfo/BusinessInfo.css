@@ -1,0 +1,12 @@
+.businessInfo-h2{
+    font-size: 2.0736rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: rgb(11, 19, 42);
+}
+.businessInfo-p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgb(77, 87, 105);
+}
