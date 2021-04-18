@@ -18,6 +18,7 @@ import AllServicesList from './Components/Admin/AllServicesList/AllServicesList'
 import UserReview from './Components/Admin/UserReview/UserReview';
 import ManageServices from './Components/Admin/ManageServices/ManageServices';
 import MakeAdmin from './Components/Admin/MakeAdmin/MakeAdmin';
+import Contact from './Home/Contact/Contact';
 
 
 
@@ -55,6 +56,9 @@ function App() {
           </Route>
           <Route  path="/makeAdmin">
             <MakeAdmin></MakeAdmin>
+          </Route>
+          <Route  path="/contact">
+            <Contact></Contact>
           </Route>
           <PrivateRoute  path="/order/:id">
             <Order></Order>

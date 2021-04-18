@@ -8,10 +8,10 @@ const BusinessInfo = () => {
     return (
        <section className="container">
             <div className="row my-5 py-5">
-            <div className="col-md-6">
-                <img height="400px" src={service} alt="" />
+            <div className="col-md-6 col-sm-12">
+                <img  src={service} alt="" />
             </div>
-            <div className="col-md-6 pt-5 p-5">
+            <div className="col-md-6 col-sm-12 pt-5 p-5">
                <div>
                <h2 className="businessInfo-h2">We Provide Many <br/> <span style={{color:"#EF929C"}}>Features</span> You Can Use</h2>
                 <p className="businessInfo-p">You can explore the features that we provide with fun and have their own functions each feature.</p>

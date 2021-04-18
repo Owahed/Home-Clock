@@ -33,18 +33,18 @@ const Order = () => {
             })
     }
     return (
-        <div className="row">
-            <div className="container d-flex mt-5 p-5">
+        <div className="container">
+            <div className="row d-flex mt-5 p-5">
            
-                <div className="col-md-5">
+                <div className="col-md-6 col-sm-12">
                 <h2 className="mb-4">Welcome: {loggedInUser.name}</h2>
                     <h3>Service Name: {productData?.serviceName}</h3>
                     <p className="my-3">{productData?.details}</p>
                     <h4 style={{color:"green"}}>Cost: ${productData?.price}</h4>
                     
                 </div>
-                <div className="col-md-2"></div>
-                <div className="col-md-5">
+                
+                <div className="col-md-6 col-sm-12">
                     <h3 className="mb-4">Payment:</h3>
                     <Payment handelCheckOutOrder={handelCheckOut}></Payment>
                 </div>

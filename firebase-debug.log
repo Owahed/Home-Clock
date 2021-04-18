@@ -1,0 +1,143 @@
+[debug] [2021-04-18T16:42:15.613Z] ----------------------------------------------------------------------
+[debug] [2021-04-18T16:42:15.623Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\rOkY\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-04-18T16:42:15.625Z] CLI Version:   9.10.0
+[debug] [2021-04-18T16:42:15.625Z] Platform:      win32
+[debug] [2021-04-18T16:42:15.626Z] Node Version:  v14.15.3
+[debug] [2021-04-18T16:42:15.630Z] Time:          Sun Apr 18 2021 22:42:15 GMT+0600 (Bangladesh Standard Time)
+[debug] [2021-04-18T16:42:15.631Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-04-18T16:42:15.673Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-04-18T16:42:15.675Z] > authorizing via signed-in user (rokyhossain74@gmail.com)
+[debug] [2021-04-18T16:42:15.675Z] [iam] checking project clock-bdb9c for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-04-18T16:42:15.686Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-04-18T16:42:15.688Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-18T16:42:16.206Z] <<< HTTP RESPONSE 200 {"date":"Sun, 18 Apr 2021 16:42:15 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-18T16:42:16.494Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/clock-bdb9c:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-04-18T16:42:17.654Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 18 Apr 2021 16:42:17 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=949","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-18T16:42:17.664Z] > refreshing access token with scopes: []
+[debug] [2021-04-18T16:42:17.665Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-18T16:42:17.920Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Sun, 18 Apr 2021 16:42:17 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-18T16:42:18.060Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clock-bdb9c [none]
+[debug] [2021-04-18T16:42:18.609Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clock-bdb9c 200
+[debug] [2021-04-18T16:42:18.609Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clock-bdb9c {"projectId":"clock-bdb9c","projectNumber":"223590738962","displayName":"clock","name":"projects/clock-bdb9c","resources":{"hostingSite":"clock-bdb9c"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'clock-bdb9c'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-04-18T16:42:18.639Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-04-18T16:42:18.640Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-18T16:42:19.133Z] <<< HTTP RESPONSE 200 {"date":"Sun, 18 Apr 2021 16:42:18 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-18T16:42:19.224Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/clock-bdb9c/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-04-18T16:42:20.982Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 18 Apr 2021 16:42:20 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[clock-bdb9c]: beginning deploy... 
+[info] i  hosting[clock-bdb9c]: found 21 files in build 
+[debug] [2021-04-18T16:42:23.394Z] > refreshing access token with scopes: []
+[debug] [2021-04-18T16:42:23.395Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-18T16:42:23.403Z] [hosting] hash cache [YnVpbGQ] stored for 21 files
+[debug] [2021-04-18T16:42:23.404Z] [hosting][hash queue][FINAL] {"max":2253,"min":42,"avg":463.14285714285705,"active":0,"complete":21,"success":21,"errored":0,"retried":0,"total":21,"elapsed":2300}
+[debug] [2021-04-18T16:42:23.991Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Sun, 18 Apr 2021 16:42:23 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-18T16:42:24.192Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/sites/clock-bdb9c/versions/fe71c53b0bcc6178:populateFiles [none]
+[debug] [2021-04-18T16:42:24.193Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/clock-bdb9c/versions/fe71c53b0bcc6178:populateFiles {"files":{"/favicon.ico":"eae62e993eb980ec8a25058c39d5a51feab118bd2100c4deebb2a9c158ec11f9","/logo192.png":"3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b","/logo512.png":"ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331","/manifest.json":"aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a","/robots.txt":"bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49","/asset-manifest.json":"1533e894a1ed0ca568e651b963be6e68417dc9a06f0b0e6f2551c14d06e7b729","/index.html":"61cb5fa3145d679d1a7f87c67e0e102f823d98b8eca13d5742328c60617d8c0e","/static/css/main.42344456.chunk.css":"cbe7dec5853e7a4ef089929dcdbabf4987c8230b28efd2df3c0a58994d386432","/static/css/main.42344456.chunk.css.map":"2610c0c2b7a2bd3fd35e9af2ff6bbd3831800f6f5c31b3631ebe8635f094c361","/static/js/2.e839f636.chunk.js.LICENSE.txt":"cabdc885ca01d60c2460d64d2a600e260fc6fa579bc880d17d972635edbcebff","/static/js/3.9d59d7c0.chunk.js":"d29f4634831962b8d690830a0b36cc429ab8de1e9173f30c6e6d85b3c9a612f7","/static/js/3.9d59d7c0.chunk.js.map":"c8599cd50729c65f82d75fb3f80ecb917b66b1ce1cc2b59d9860ac8792bd6e1d","/static/js/main.83baee0d.chunk.js":"3449c223ad0cef901d2cb66309ffc8a14aee5d57e8b6c8e9bb8eefe535149862","/static/js/runtime-main.c15e2a34.js":"f4a17cd906cd9da5651df60e6161adbbabf7937a04d10fc108f09539faa76190","/static/js/runtime-main.c15e2a34.js.map":"4f710e63cc8bc0327490e8b295e01437c7d45711f38d6894900fe9653894ce34","/static/media/logo.6ce24c58.svg":"ac1a3d8899432561573d6a5cf56459437c09b902599a1deb91c0f8d4bb40459d","/static/js/main.83baee0d.chunk.js.map":"f1a93a1fd6d9d1752800e866265c9f40b96adb1ba10049040861b21cafb0407a","/static/js/2.e839f636.chunk.js":"0df68cac2dce0ef664e5f59d1051f36d74b264560412bb6b4e1a8764681dca83","/static/media/2650452.23d42304.jpg":"7c79c17c99f3cd07c6eba06d77083c7332697aa027f991dd1ed3f86a9bcbf1a8","/static/media/10894.5d6e5824.jpg":"eddb9875c36b04809924256d76eb3ebbabf38ee5a21e286a7755887db066e336","/static/js/2.e839f636.chunk.js.map":"c443348f18c02e3b39644697fb5c80ea8f81f009d4197266058072946073dd3f"}}
+[debug] [2021-04-18T16:42:26.209Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/sites/clock-bdb9c/versions/fe71c53b0bcc6178:populateFiles 200
+[debug] [2021-04-18T16:42:26.210Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/clock-bdb9c/versions/fe71c53b0bcc6178:populateFiles {"uploadRequiredHashes":["f1a93a1fd6d9d1752800e866265c9f40b96adb1ba10049040861b21cafb0407a","cbe7dec5853e7a4ef089929dcdbabf4987c8230b28efd2df3c0a58994d386432","c443348f18c02e3b39644697fb5c80ea8f81f009d4197266058072946073dd3f","3449c223ad0cef901d2cb66309ffc8a14aee5d57e8b6c8e9bb8eefe535149862","1533e894a1ed0ca568e651b963be6e68417dc9a06f0b0e6f2551c14d06e7b729","c8599cd50729c65f82d75fb3f80ecb917b66b1ce1cc2b59d9860ac8792bd6e1d","d29f4634831962b8d690830a0b36cc429ab8de1e9173f30c6e6d85b3c9a612f7","2610c0c2b7a2bd3fd35e9af2ff6bbd3831800f6f5c31b3631ebe8635f094c361","f4a17cd906cd9da5651df60e6161adbbabf7937a04d10fc108f09539faa76190","4f710e63cc8bc0327490e8b295e01437c7d45711f38d6894900fe9653894ce34","61cb5fa3145d679d1a7f87c67e0e102f823d98b8eca13d5742328c60617d8c0e","0df68cac2dce0ef664e5f59d1051f36d74b264560412bb6b4e1a8764681dca83"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files"}
+[debug] [2021-04-18T16:42:26.226Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/f1a93a1fd6d9d1752800e866265c9f40b96adb1ba10049040861b21cafb0407a [none]
+[debug] [2021-04-18T16:42:26.227Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/f1a93a1fd6d9d1752800e866265c9f40b96adb1ba10049040861b21cafb0407a [stream]
+[debug] [2021-04-18T16:42:26.231Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/cbe7dec5853e7a4ef089929dcdbabf4987c8230b28efd2df3c0a58994d386432 [none]
+[debug] [2021-04-18T16:42:26.232Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/cbe7dec5853e7a4ef089929dcdbabf4987c8230b28efd2df3c0a58994d386432 [stream]
+[debug] [2021-04-18T16:42:26.236Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/c443348f18c02e3b39644697fb5c80ea8f81f009d4197266058072946073dd3f [none]
+[debug] [2021-04-18T16:42:26.237Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/c443348f18c02e3b39644697fb5c80ea8f81f009d4197266058072946073dd3f [stream]
+[debug] [2021-04-18T16:42:26.240Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/3449c223ad0cef901d2cb66309ffc8a14aee5d57e8b6c8e9bb8eefe535149862 [none]
+[debug] [2021-04-18T16:42:26.241Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/3449c223ad0cef901d2cb66309ffc8a14aee5d57e8b6c8e9bb8eefe535149862 [stream]
+[debug] [2021-04-18T16:42:26.244Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/1533e894a1ed0ca568e651b963be6e68417dc9a06f0b0e6f2551c14d06e7b729 [none]
+[debug] [2021-04-18T16:42:26.244Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/1533e894a1ed0ca568e651b963be6e68417dc9a06f0b0e6f2551c14d06e7b729 [stream]
+[debug] [2021-04-18T16:42:26.248Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/c8599cd50729c65f82d75fb3f80ecb917b66b1ce1cc2b59d9860ac8792bd6e1d [none]
+[debug] [2021-04-18T16:42:26.248Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/c8599cd50729c65f82d75fb3f80ecb917b66b1ce1cc2b59d9860ac8792bd6e1d [stream]
+[debug] [2021-04-18T16:42:26.251Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/d29f4634831962b8d690830a0b36cc429ab8de1e9173f30c6e6d85b3c9a612f7 [none]
+[debug] [2021-04-18T16:42:26.252Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/d29f4634831962b8d690830a0b36cc429ab8de1e9173f30c6e6d85b3c9a612f7 [stream]
+[debug] [2021-04-18T16:42:26.266Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/2610c0c2b7a2bd3fd35e9af2ff6bbd3831800f6f5c31b3631ebe8635f094c361 [none]
+[debug] [2021-04-18T16:42:26.267Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/2610c0c2b7a2bd3fd35e9af2ff6bbd3831800f6f5c31b3631ebe8635f094c361 [stream]
+[debug] [2021-04-18T16:42:26.270Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/f4a17cd906cd9da5651df60e6161adbbabf7937a04d10fc108f09539faa76190 [none]
+[debug] [2021-04-18T16:42:26.271Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/f4a17cd906cd9da5651df60e6161adbbabf7937a04d10fc108f09539faa76190 [stream]
+[debug] [2021-04-18T16:42:26.274Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/4f710e63cc8bc0327490e8b295e01437c7d45711f38d6894900fe9653894ce34 [none]
+[debug] [2021-04-18T16:42:26.274Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/4f710e63cc8bc0327490e8b295e01437c7d45711f38d6894900fe9653894ce34 [stream]
+[debug] [2021-04-18T16:42:26.278Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/61cb5fa3145d679d1a7f87c67e0e102f823d98b8eca13d5742328c60617d8c0e [none]
+[debug] [2021-04-18T16:42:26.278Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/61cb5fa3145d679d1a7f87c67e0e102f823d98b8eca13d5742328c60617d8c0e [stream]
+[debug] [2021-04-18T16:42:26.281Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/0df68cac2dce0ef664e5f59d1051f36d74b264560412bb6b4e1a8764681dca83 [none]
+[debug] [2021-04-18T16:42:26.282Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/0df68cac2dce0ef664e5f59d1051f36d74b264560412bb6b4e1a8764681dca83 [stream]
+[debug] [2021-04-18T16:42:26.286Z] [hosting][populate queue][FINAL] {"max":2833,"min":2833,"avg":2833,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":2893}
+[debug] [2021-04-18T16:42:26.287Z] [hosting] uploads queued: 12
+[debug] [2021-04-18T16:42:29.783Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/1533e894a1ed0ca568e651b963be6e68417dc9a06f0b0e6f2551c14d06e7b729 200
+[debug] [2021-04-18T16:42:29.784Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/1533e894a1ed0ca568e651b963be6e68417dc9a06f0b0e6f2551c14d06e7b729 [stream]
+[debug] [2021-04-18T16:42:29.817Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/4f710e63cc8bc0327490e8b295e01437c7d45711f38d6894900fe9653894ce34 200
+[debug] [2021-04-18T16:42:29.818Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/4f710e63cc8bc0327490e8b295e01437c7d45711f38d6894900fe9653894ce34 [stream]
+[debug] [2021-04-18T16:42:29.876Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/c8599cd50729c65f82d75fb3f80ecb917b66b1ce1cc2b59d9860ac8792bd6e1d 200
+[debug] [2021-04-18T16:42:29.876Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/c8599cd50729c65f82d75fb3f80ecb917b66b1ce1cc2b59d9860ac8792bd6e1d [stream]
+[debug] [2021-04-18T16:42:29.947Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/61cb5fa3145d679d1a7f87c67e0e102f823d98b8eca13d5742328c60617d8c0e 200
+[debug] [2021-04-18T16:42:29.948Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/61cb5fa3145d679d1a7f87c67e0e102f823d98b8eca13d5742328c60617d8c0e [stream]
+[debug] [2021-04-18T16:42:30.030Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/d29f4634831962b8d690830a0b36cc429ab8de1e9173f30c6e6d85b3c9a612f7 200
+[debug] [2021-04-18T16:42:30.031Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/d29f4634831962b8d690830a0b36cc429ab8de1e9173f30c6e6d85b3c9a612f7 [stream]
+[debug] [2021-04-18T16:42:30.148Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/f4a17cd906cd9da5651df60e6161adbbabf7937a04d10fc108f09539faa76190 200
+[debug] [2021-04-18T16:42:30.149Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/f4a17cd906cd9da5651df60e6161adbbabf7937a04d10fc108f09539faa76190 [stream]
+[debug] [2021-04-18T16:42:30.175Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/cbe7dec5853e7a4ef089929dcdbabf4987c8230b28efd2df3c0a58994d386432 200
+[debug] [2021-04-18T16:42:30.176Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/cbe7dec5853e7a4ef089929dcdbabf4987c8230b28efd2df3c0a58994d386432 [stream]
+[debug] [2021-04-18T16:42:30.376Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/0df68cac2dce0ef664e5f59d1051f36d74b264560412bb6b4e1a8764681dca83 200
+[debug] [2021-04-18T16:42:30.376Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/0df68cac2dce0ef664e5f59d1051f36d74b264560412bb6b4e1a8764681dca83 [stream]
+[debug] [2021-04-18T16:42:30.642Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/3449c223ad0cef901d2cb66309ffc8a14aee5d57e8b6c8e9bb8eefe535149862 200
+[debug] [2021-04-18T16:42:30.643Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/3449c223ad0cef901d2cb66309ffc8a14aee5d57e8b6c8e9bb8eefe535149862 [stream]
+[debug] [2021-04-18T16:42:30.731Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/f1a93a1fd6d9d1752800e866265c9f40b96adb1ba10049040861b21cafb0407a 200
+[debug] [2021-04-18T16:42:30.739Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/f1a93a1fd6d9d1752800e866265c9f40b96adb1ba10049040861b21cafb0407a [stream]
+[debug] [2021-04-18T16:42:31.599Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/2610c0c2b7a2bd3fd35e9af2ff6bbd3831800f6f5c31b3631ebe8635f094c361 200
+[debug] [2021-04-18T16:42:31.600Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/2610c0c2b7a2bd3fd35e9af2ff6bbd3831800f6f5c31b3631ebe8635f094c361 [stream]
+[debug] [2021-04-18T16:42:31.790Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/c443348f18c02e3b39644697fb5c80ea8f81f009d4197266058072946073dd3f 200
+[debug] [2021-04-18T16:42:31.791Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/clock-bdb9c/versions/fe71c53b0bcc6178/files/c443348f18c02e3b39644697fb5c80ea8f81f009d4197266058072946073dd3f [stream]
+[debug] [2021-04-18T16:42:31.792Z] [hosting][upload queue][FINAL] {"max":5577,"min":3568,"avg":4193.083333333333,"active":0,"complete":12,"success":12,"errored":0,"retried":0,"total":12,"elapsed":5581}
+[info] +  hosting[clock-bdb9c]: file upload complete 
+[debug] [2021-04-18T16:42:31.816Z] [hosting] deploy completed after 10826ms
+[debug] [2021-04-18T16:42:32.639Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "clock-bdb9c"
+    },
+    "site": "clock-bdb9c",
+    "version": "sites/clock-bdb9c/versions/fe71c53b0bcc6178"
+  }
+]
+[info] i  hosting[clock-bdb9c]: finalizing version... 
+[debug] [2021-04-18T16:42:32.672Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-04-18T16:42:32.672Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-18T16:42:32.973Z] <<< HTTP RESPONSE 200 {"date":"Sun, 18 Apr 2021 16:42:32 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-18T16:42:33.120Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/clock-bdb9c/versions/fe71c53b0bcc6178?updateMask=status  
+ {"status":"FINALIZED"}
+[debug] [2021-04-18T16:42:34.655Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 18 Apr 2021 16:42:34 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-18T16:42:34.658Z] [hosting] finalized version for clock-bdb9c: {"name":"sites/clock-bdb9c/versions/fe71c53b0bcc6178","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2021-04-18T16:42:20.382250Z","createUser":{"email":"rokyhossain74@gmail.com"},"finalizeTime":"2021-04-18T16:42:34.338240Z","finalizeUser":{"email":"rokyhossain74@gmail.com"}}
+[info] +  hosting[clock-bdb9c]: version finalized 
+[info] i  hosting[clock-bdb9c]: releasing new version... 
+[debug] [2021-04-18T16:42:34.666Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/clock-bdb9c/releases?version_name=sites/clock-bdb9c/versions/fe71c53b0bcc6178  
+ {"message":null}
+[debug] [2021-04-18T16:42:36.095Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 18 Apr 2021 16:42:35 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-18T16:42:36.097Z] [hosting] release: {"name":"sites/clock-bdb9c/releases/1618764155252421","version":{"name":"sites/clock-bdb9c/versions/fe71c53b0bcc6178","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2021-04-18T16:42:20.382250Z","createUser":{"email":"rokyhossain74@gmail.com"},"finalizeTime":"2021-04-18T16:42:34.338240Z","finalizeUser":{"email":"rokyhossain74@gmail.com"},"preview":{}},"type":"DEPLOY","releaseTime":"2021-04-18T16:42:35.252421841Z","releaseUser":{"email":"rokyhossain74@gmail.com"}}
+[info] +  hosting[clock-bdb9c]: release complete 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/clock-bdb9c/overview
+[info] Hosting URL: https://clock-bdb9c.web.app

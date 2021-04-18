@@ -20,6 +20,7 @@ const useStyles = makeStyles({
 const AllServicesList = () => {
     const [services, setServices] = useState([]);
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+    console.log(services)
 
     useEffect(() => {
         fetch('https://arcane-escarpment-26588.herokuapp.com/allServices')

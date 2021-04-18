@@ -1,11 +1,12 @@
 import React from 'react';
 import baner from '../../Image/10894.jpg'
+import './Header.css'
 
 const Header = () => {
     return (
         <main className="container ">
             <div className="container mt-4 row ">
-            <div className="col-md-6 d-flex align-items-center">
+            <div className="col-md-6 d-flex align-items-center col-sm-12">
                <div>
                <h1 className="my-5 text-uppercase">Select  <span style={{color:"#5071BE"}}>Your New</span><br/>Perfect Style</h1>
                 <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id minima tempore nostrum odit nulla culpa.</h6>
@@ -13,8 +14,8 @@ const Header = () => {
                </div>
             </div>
             
-            <div  className="col-md-6">
-                <img  style={{height:"400px"}} src={baner} alt=""/>
+            <div  className="col-md-6 col-sm-12">
+                <img  src={baner} alt=""/>
             </div>
             </div>
         </main>
