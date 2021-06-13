@@ -3,6 +3,7 @@ import React from 'react';
 const NavBar = () => {
     return (
         <div >
+            {/* hi i am */}
             <nav class="navbar navbar-expand-lg navbar-light bg-light ">
                 <div class="container-fluid">
                     <a style={{ color: "#2b468b", fontWeight: "700", marginLeft: "10%" }} class="navbar-brand" href="/">Home Clock</a>
