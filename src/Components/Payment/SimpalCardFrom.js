@@ -43,7 +43,7 @@ const SimpalCardFrom = ({handelCheckOutOrder}) => {
             <form onSubmit={handleSubmit}>
                 <CardElement />
                 <button className="btn btn-danger my-3" type="submit" disabled={!stripe}>
-                    Pay
+                    Pay & Order
                 </button>
             </form>
             {

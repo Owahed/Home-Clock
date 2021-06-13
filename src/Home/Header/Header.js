@@ -1,6 +1,5 @@
 import React from 'react';
-import baner from '../../Image/10894.jpg'
-import './Header.css'
+
 
 const Header = () => {
     return (
@@ -15,7 +14,8 @@ const Header = () => {
             </div>
             
             <div  className="col-md-6 col-sm-12">
-                <img  src={baner} alt=""/>
+                {/* <img  src={baner} alt=""/> */}
+                <img className="projectDetailsImg" src="https://i.ibb.co/rQv3S63/10894.jpg" alt="10894" border="0"></img>
             </div>
             </div>
         </main>

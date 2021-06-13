@@ -64,3 +64,61 @@ h1,h2{
   border-radius: 4px;
 }
 
+/* ---------------------------contact------------- */
+
+.contact-icon{
+  border-radius: 50%;
+  float: left;
+  font-size: 24px;
+  height: 30px;
+  line-height: 47px;
+  margin-right: 12px;
+  text-align: center;
+  width: 47px !important;
+  color: #919191;
+}
+.contact-h4{
+color: #7b7b7b;
+position: relative;
+  top: 5px;
+  font-weight: 400;
+}
+.contact-a{
+color: #979797;
+}
+
+.contact-input {
+  border: none;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 5px 10px;
+  font-weight: 300;
+    line-height: 26px;
+    color: #b3b3b3;
+}
+.contact-area  {
+  font-weight: 300;
+  line-height: 26px;
+  color: #b3b3b3;
+  border: 1px solid #d9d9d9;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 0;
+    padding: 10px 10px;
+    width: 95%;
+}
+
+/* ---------------------------------------img------------ */
+
+@media only screen and (min-width: 320px) {
+  .projectDetailsImg {
+      
+      height: 200px;
+  }
+  
+}
+@media only screen and (min-width: 900px) {
+  .projectDetailsImg{
+  
+    height: 400px;
+  }
+}

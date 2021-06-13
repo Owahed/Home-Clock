@@ -19,6 +19,7 @@ import UserReview from './Components/Admin/UserReview/UserReview';
 import ManageServices from './Components/Admin/ManageServices/ManageServices';
 import MakeAdmin from './Components/Admin/MakeAdmin/MakeAdmin';
 import Contact from './Home/Contact/Contact';
+import NavBar from './Components/NavBar/NavBar';
 
 
 
@@ -28,6 +29,7 @@ function App() {
   const [loggedInUser, setLoggedInUser] = useState({});
   return (
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]} >
+      <NavBar></NavBar>
       <Router>
         <Switch>
           <Route exact path="/">

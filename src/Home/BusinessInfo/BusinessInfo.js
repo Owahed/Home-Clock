@@ -1,5 +1,4 @@
 import React from 'react';
-import service from '../../Image/2650452.jpg'
 import './BusinessInfo.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons'
@@ -9,7 +8,7 @@ const BusinessInfo = () => {
        <section className="container">
             <div className="row my-5 py-5">
             <div className="col-md-6 col-sm-12">
-                <img  src={service} alt="" />
+            <img className="projectDetailsImg" src="https://i.ibb.co/swcjtcK/2650452.jpg" alt="2650452" border="0"/>
             </div>
             <div className="col-md-6 col-sm-12 pt-5 p-5">
                <div>
